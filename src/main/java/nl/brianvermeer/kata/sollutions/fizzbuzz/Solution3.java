@@ -1,9 +1,10 @@
 package nl.brianvermeer.kata.sollutions.fizzbuzz;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
-public class Solution2 {
+public class Solution3 {
 
     //take a list for 0 to 50
     //output the number a String unless:
@@ -12,20 +13,14 @@ public class Solution2 {
     //if a number can be divided by 3 and 5 output "FizzBuzz"
 
     public List<String> fizzBuzz() {
-        List<String> result = new ArrayList<>();
-        for (int i = 1; i <= 50; i++) {
-            if (i % 15 == 0) {
-                result.add("FizzBuzz");
-            } else if (i % 3 == 0) {
-                result.add("Fizz");
-            } else if (i % 5 == 0) {
-                result.add("Buzz");
-            } else {
-                result.add(String.valueOf(i));
-            }
-        }
-
-        return result;
+        return IntStream.rangeClosed(1,50)
+                .boxed().map( n -> {
+                    if(n % 3 == 0 && n % 5 == 0 ) return "FizzBuzz";
+                    if(n % 3 == 0) return "Fizz";
+                    if(n % 5 == 0) return "Buzz";
+                    return n.toString();
+                })
+                .collect(Collectors.toList());
     }
 
     public static void main(String[] args) {
@@ -34,5 +29,3 @@ public class Solution2 {
     }
 
 }
-
-
