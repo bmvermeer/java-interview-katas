@@ -1,4 +1,4 @@
-package nl.brianvermeer.kata.sollutions.fizzbuzz;
+package nl.brianvermeer.kata.solutions.fizzbuzz;
 
 import java.util.List;
 import java.util.stream.Collectors;
