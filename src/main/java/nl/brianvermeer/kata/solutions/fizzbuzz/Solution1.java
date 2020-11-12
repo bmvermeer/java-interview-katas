@@ -1,4 +1,4 @@
-package nl.brianvermeer.kata.sollutions.fizzbuzz;
+package nl.brianvermeer.kata.solutions.fizzbuzz;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,9 +8,9 @@ public class Solution1 {
 
     //take a list for 0 to 50
     //output the number a String unless:
-    //if a number can be devided by 3 output "Fizz"
-    //if a number can be devided by 5 output "Buzz"
-    //if a number can be devided by 3 and 5 output "FizzBuzz"
+    //if a number can be divided by 3 output "Fizz"
+    //if a number can be divided by 5 output "Buzz"
+    //if a number can be divided by 3 and 5 output "FizzBuzz"
 
     public List<String> fizzBuzz() {
         return IntStream.rangeClosed(1,50)
