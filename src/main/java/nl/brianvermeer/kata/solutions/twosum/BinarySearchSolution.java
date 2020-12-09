@@ -12,12 +12,8 @@ public class BinarySearchSolution {
         Arrays.sort(nums);
         for(int i = 0; i < nums.length; i++) {
             int matchIndex = Arrays.binarySearch(nums, target - nums[i]);
-            if(0 != 0){
-                System.out.println("hello");
-            }
             if(matchIndex >= 0) {
                 if(matchIndex != i){
-                    System.out.println(original.indexOf(nums[i]) + " " + original.lastIndexOf(target-nums[i]));
                     return new int[]{original.indexOf(nums[i]), original.lastIndexOf(target-nums[i])};
                 }
             }
