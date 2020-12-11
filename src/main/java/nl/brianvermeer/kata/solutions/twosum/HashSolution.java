@@ -1,9 +1,6 @@
 package nl.brianvermeer.kata.solutions.twosum;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -25,7 +22,7 @@ public class HashSolution {
     }
 
     public int[] twoSum_hashSet(int[] nums, int target) {
-        HashSet<Integer> setOfNums = new HashSet<>();
+        Set<Integer> setOfNums = new HashSet<>();
         for(int i = 0; i < nums.length; i++) {
             if(setOfNums.contains(target - nums[i])) {
                 return new int[]{i, Arrays.stream(nums).boxed().collect(Collectors.toList()).indexOf(target-nums[i])};
@@ -38,5 +35,6 @@ public class HashSolution {
     public static void main(String[] args) {
         HashSolution twoSum = new HashSolution();
         assertArrayEquals(new int[]{0, 1} , twoSum.twoSum_hashMap(new int[]{3, 3}, 6));
+        assertArrayEquals(new int[]{0, 1} , twoSum.twoSum_hashSet(new int[]{3, 3}, 6));
     }
 }

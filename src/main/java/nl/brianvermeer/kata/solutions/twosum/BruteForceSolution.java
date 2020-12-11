@@ -33,5 +33,6 @@ public class BruteForceSolution {
     public static void main(String[] args) {
         BruteForceSolution twoSum = new BruteForceSolution();
         assertArrayEquals(new int[]{0, 1} , twoSum.twoSum(new int[]{3, 3}, 6));
+        assertArrayEquals(new int[]{0, 1} , twoSum.twoSum2(new int[]{3, 3}, 6));
     }
 }
