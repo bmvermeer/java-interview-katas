@@ -1,6 +1,6 @@
 package exercises.reverseint;
 
-import nl.brianvermeer.kata.excercises.ReverseInt.ReverseInt;
+import nl.brianvermeer.kata.excercises.reverseint.ReverseInt;
 import org.junit.Before;
 import org.junit.Test;
 
