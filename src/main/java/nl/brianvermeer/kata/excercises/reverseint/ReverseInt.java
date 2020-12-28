@@ -1,4 +1,4 @@
-package nl.brianvermeer.kata.excercises.ReverseInt;
+package nl.brianvermeer.kata.excercises.reverseint;
 
 import nl.brianvermeer.kata.NotImplementedYetException;
 
