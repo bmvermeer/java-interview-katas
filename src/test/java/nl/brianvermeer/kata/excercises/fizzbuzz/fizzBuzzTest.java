@@ -1,6 +1,5 @@
-package exercises.fizzbuzz;
+package nl.brianvermeer.kata.excercises.fizzbuzz;
 
-import nl.brianvermeer.kata.excercises.fizzbuzz.FizzBuzz;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

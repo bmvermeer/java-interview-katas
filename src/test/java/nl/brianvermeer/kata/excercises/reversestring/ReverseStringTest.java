@@ -1,6 +1,5 @@
-package exercises.reversestring;
+package nl.brianvermeer.kata.excercises.reversestring;
 
-import nl.brianvermeer.kata.excercises.reversestring.ReverseString;
 import org.junit.Before;
 import org.junit.Test;
 

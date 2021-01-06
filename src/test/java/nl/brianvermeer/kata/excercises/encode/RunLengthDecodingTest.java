@@ -1,9 +1,7 @@
-package exercises.encode;
+package nl.brianvermeer.kata.excercises.encode;
 
-import nl.brianvermeer.kata.excercises.encode.RunLengthEncoding;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class RunLengthDecodingTest {

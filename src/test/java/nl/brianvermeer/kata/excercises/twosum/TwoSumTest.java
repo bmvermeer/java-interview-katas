@@ -1,6 +1,5 @@
-package exercises.twosum;
+package nl.brianvermeer.kata.excercises.twosum;
 
-import nl.brianvermeer.kata.excercises.twosum.TwoSum;
 import org.junit.Before;
 import org.junit.Test;
 
