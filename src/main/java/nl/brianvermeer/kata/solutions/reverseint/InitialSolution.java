@@ -5,8 +5,8 @@ import static org.junit.Assert.assertEquals;
 public class InitialSolution {
 
     public int reverse(int x) {
-        boolean isNegative = false;
-        if(x < 0){
+        boolean isNegative = x < 0;
+        if(isNegative){
             isNegative = true;
             x *= -1;
         }

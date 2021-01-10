@@ -25,11 +25,6 @@
             <version>4.13-beta-2</version>
             <scope>compile</scope>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.assertj</groupId>-->
-<!--            <artifactId>assertj-core</artifactId>-->
-<!--            <version>3.16.1</version>-->
-<!--        </dependency>-->
     </dependencies>
 
 
